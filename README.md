@@ -1,4 +1,4 @@
-# cPanel-DNS-Check-Account-WHM-Plugin
+# cPanel-WHM-Maldet-GUI
 
 ### Install
 
