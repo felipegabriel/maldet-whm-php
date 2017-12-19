@@ -60,7 +60,7 @@ function all_cpanel_users() {
             if (isset($_POST['scanid'])) {
                 $id = str_replace('.', '', str_replace('-', '', $_POST['scanid']));
                 if (is_numeric($id)) {
-                    echo shell_exec('maldet -e ' . $id);
+                    echo shell_exec('maldet -e ' . $_POST['scanid']);
                 }else{
                     echo 'Invalid Scan ID ' . $id;
                 }
