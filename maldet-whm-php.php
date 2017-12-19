@@ -54,6 +54,9 @@ function all_cpanel_users() {
                 $background = $_POST['background'] == '1' ? ' -b ' : '';
                 echo shell_exec('maldet ' . $background . ' -a /home/');
             }
+            if (isset($_POST['viewlog'])) {
+                echo shell_exec('maldet -l');
+            }
             if (isset($_POST['scanid'])) {
                 $id = str_replace('.', '', str_replace('-', '', $_POST['scanid']));
                 if (is_numeric($id)) {
@@ -95,6 +98,11 @@ function all_cpanel_users() {
             <input type="text" name="scanid" value="">
             <br>
             <input type="submit" name="scanreportid" value="View the Scan Report">
+        </form>
+        <hr>
+        <form action="" method="post">
+            <p>View Logs</p>
+            <input type="submit" name="viewlog" value="View Scan Logs">
         </form>
         <hr>
     </body>
