@@ -1,0 +1,2 @@
+mkdir -p /usr/local/cpanel/whostmgr/docroot/cgi/maldet-whm-php
+/usr/local/cpanel/bin/register_appconfig /usr/local/cpanel/whostmgr/docroot/cgi/maldet-whm-php/maldet-whm-php.conf
