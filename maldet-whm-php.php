@@ -38,6 +38,8 @@ function all_cpanel_users() {
     </head>
     <body>
         <h1>Maldet WHM</h1>
+        <hr>
+        <p>Maldet output:</p>
         <textarea style="width: 100%; min-height: 200px; margin-bottom: 20px;">
             <?php
             if (isset($_POST['scan_user'])) {
